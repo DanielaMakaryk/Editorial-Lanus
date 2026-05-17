@@ -17,5 +17,5 @@ Plataforma Web Corporativa e Institucional desarrollada para la gestión de iden
 * JavaScript puro (Interacciones dinámicas en la interfaz).
 
 ---
-*Proyecto profesional de desarrollo web integral realizado de forma freelance para la Editorial Lanús (Año 2022).*
+*Proyecto profesional de desarrollo web integral realizado para la Editorial Lanús (Año 2022).*
 
