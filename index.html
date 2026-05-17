@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editorial Lanús - Excelencia en Impresión</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bordo-profundo: #4A0E0E;
+            --bordo-claro: #801818;
+            --crema-papel: #FDF5E6;
+            --tinta-negra: #1A1A1A;
+            --blanco: #FFFFFF;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            background-color: var(--crema-papel);
+            color: var(--tinta-negra);
+            overflow-x: hidden;
+        }
+
+        header {
+            background: var(--blanco);
+            padding: 1rem 4%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-container { display: flex; align-items: center; gap: 10px; }
+        .logo-icon { font-size: 28px; color: var(--bordo-profundo); }
+        
+        .logo-texto {
+            font-style: italic;
+            font-weight: 700;
+            font-size: clamp(1rem, 3.5vw, 1.5rem);
+            color: var(--bordo-profundo);
+            margin: 0;
+        }
+
+        nav a {
+            text-decoration: none !important;
+            color: var(--bordo-profundo) !important;
+            font-style: italic;
+            font-weight: 700;
+            font-size: clamp(0.8rem, 2.5vw, 1.1rem);
+            margin-left: 15px;
+            transition: 0.3s;
+        }
+        nav a:hover { color: var(--bordo-claro) !important; }
+
+        .hero {
+            height: 450px;
+            background: var(--bordo-profundo);
+            background-image: radial-gradient(var(--bordo-claro) 0.5px, transparent 0.5px);
+            background-size: 3px 3px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 8px solid var(--bordo-claro);
+            text-align: center;
+        }
+
+        .hero-content {
+            z-index: 2;
+            animation: dropDown 2.5s ease-out forwards;
+        }
+
+        @keyframes dropDown {
+            0% { transform: translateY(-100%); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        .hero-titulo {
+            font-style: italic;
+            font-size: clamp(2rem, 8vw, 4.2rem);
+            margin: 0;
+            color: var(--blanco);
+            text-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+        }
+
+        .hero-sub {
+            color: var(--crema-papel);
+            letter-spacing: 4px;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        .grid-servicios {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 50px 5%;
+        }
+
+        .card {
+            background: var(--blanco);
+            padding: 30px;
+            width: 280px;
+            border-radius: 4px;
+            text-align: center;
+            transition: 0.4s;
+            border-bottom: 6px solid var(--bordo-profundo);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .card h3 {
+            font-style: italic;
+            color: var(--bordo-profundo);
+            margin-bottom: 12px;
+            font-size: 1.5rem;
+        }
+
+        .card p { font-size: 1.1rem; line-height: 1.4; }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-bottom-color: var(--bordo-claro);
+            background-color: #fffaf0;
+        }
+
+        .contact-form {
+            max-width: 650px;
+            margin: 60px auto;
+            background: var(--blanco);
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 18px;
+            margin: 15px 0;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+        }
+
+        .btn-submit {
+            background: var(--bordo-profundo);
+            color: white;
+            padding: 20px;
+            width: 100%;
+            border: none;
+            /* FUENTE ASEGURADA AQUÍ */
+            font-family: 'Playfair Display', serif !important;
+            font-style: italic;
+            font-weight: 700;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn-submit:hover { background: var(--bordo-claro); }
+
+        footer {
+            background: #1A0505;
+            color: #aaa;
+            text-align: center;
+            padding: 40px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <span class="logo-icon">🖋️</span>
+        <h1 class="logo-texto">Editorial Lanús</h1>
+    </div>
+    <nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2 class="hero-titulo">Editorial Lanús</h2>
+        <p class="hero-sub">Tradición en Artes Gráficas</p>
+    </div>
+</section>
+
+<div class="grid-servicios" id="servicios">
+    <div class="card"><h3>Impresión de Diarios</h3><p>Periódicos locales con máxima nitidez y puntualidad.</p></div>
+    <div class="card"><h3>Folletos y Flyers</h3><p>Diseños publicitarios de alto impacto visual.</p></div>
+    <div class="card"><h3>Revistas</h3><p>Encuadernación y acabado profesional para publicaciones.</p></div>
+    <div class="card"><h3>Libros</h3><p>Producción editorial de alta gama y tiradas a medida.</p></div>
+    <div class="card"><h3>Tarjetas Personales</h3><p>Papelería comercial con acabados artesanales.</p></div>
+    <div class="card"><h3>Talonarios</h3><p>Formularios comerciales y documentos con numeración.</p></div>
+    <div class="card" style="border-bottom-color: var(--bordo-claro);">
+        <h3>Diseño Gráfico</h3>
+        <p>Proyectos integrales de imagen para su empresa.</p>
+    </div>
+</div>
+
+<section class="contact-form" id="contacto">
+    <div id="f-box">
+        <h2 style="color: var(--bordo-profundo); font-style: italic; font-size: 2.2rem;">Presupuestos</h2>
+        <input type="text" placeholder="Su Nombre">
+        <input type="email" placeholder="Correo de contacto">
+        <textarea rows="6" placeholder="Detalle su pedido de impresión o diseño..."></textarea>
+        <button class="btn-submit" onclick="enviarSim()">Enviar Consulta</button>
+    </div>
+    <div id="s-box" style="display:none; padding: 50px;">
+        <span style="font-size: 6rem; color: var(--bordo-profundo);">🖋️</span>
+        <h2 style="color: var(--bordo-profundo); font-style: italic;">¡Mensaje Recibido!</h2>
+        <p>Nos pondremos en contacto a la brevedad.</p>
+    </div>
+</section>
+
+<footer>
+    <p>Editorial Lanús - Buenos Aires</p>
+    <p>© 2022 | Derechos Reservados</p>
+</footer>
+
+<script>
+    function enviarSim() {
+        document.getElementById('f-box').style.display = 'none';
+        document.getElementById('s-box').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
+
+  
