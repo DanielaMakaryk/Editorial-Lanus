@@ -1,5 +1,5 @@
 # Editorial-Lanus
-Plataforma Web Corporativa desarrollada de forma profesional para la Editorial Lanús. Proyecto comercial enfocado en la difusión cultural y catálogo literario (2022).
+Plataforma Web Corporativa desarrollada de forma profesional para la Editorial Lanús. Proyecto comercial enfocado en la difusión cultural y catálogo literario (2023).
 
 
 # Editorial Lanús 📚
@@ -17,5 +17,5 @@ Plataforma Web Corporativa e Institucional desarrollada para la gestión de iden
 * JavaScript puro (Interacciones dinámicas en la interfaz).
 
 ---
-*Proyecto profesional de desarrollo web integral realizado para la Editorial Lanús (Año 2022).*
+*Proyecto profesional de desarrollo web integral realizado para la Editorial Lanús (Año 2023).*
 
